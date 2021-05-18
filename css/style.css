@@ -70,6 +70,7 @@ nav {
   padding: 20px;
   width: 80%;
   margin: 40px auto;
+  border-radius: 5px;
 }
 
 .intro-contain h2 {
@@ -132,6 +133,7 @@ nav {
   margin-bottom: 50px;
   transition: 0.3s;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .card-header {
@@ -154,6 +156,7 @@ nav {
   background: #376487;
   margin-top: 30px;
   padding: 10px 5px;
+  border-radius: 5px;
 }
 
 .card:hover {
@@ -169,7 +172,7 @@ nav {
 }
 
 .footer .footer-content {
-  height: 350px;
+  height: 400px;
   display: -ms-flexbox;
   display: flex;
 }
@@ -177,19 +180,26 @@ nav {
 .footer .footer-content .footer-section {
   -ms-flex: 1;
       flex: 1;
-  padding: 30px;
-  margin: 5px;
+  padding: 40px;
+  margin: 10px;
 }
 
 .footer .logo-text {
-  word-spacing: 6px;
-  font-size: 30px;
+  word-spacing: 9px;
+  font-size: 35px;
   font-family: 'Lobster',cursive;
 }
 
 .footer .footer-content h1 {
-  color: #ebe7e7;
+  color: #ea8685;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.footer .footer-content h2 {
+  color: #c5c2c2;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .footer .footer-content .about .contact span {
@@ -207,15 +217,69 @@ nav {
   text-align: center;
   display: inline-block;
   font-size: 20px;
-  color: #a4cccc;
+  color: #c5c2c2;
   border-radius: 5px;
   transition: all .3s;
 }
 
 .footer .footer-content .about .socials a:hover {
-  border: 1px solid white;
-  color: white;
+  border: 1px solid #c5c2c2;
+  color: #a4cccc;
   transition: all .3s;
+}
+
+.footer .footer-content .links ul li {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  transition: all .3s;
+}
+
+.footer .footer-content .links ul li:hover {
+  color: #c5c2c2;
+  margin-left: 15px;
+  transition: all .3s;
+  color: #a4cccc;
+}
+
+.footer .footer-content .contact-form .contact-input {
+  background: #376487;
+  color: #c5c2c2;
+  margin-bottom: 10px;
+  line-height: 20px;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.text-input {
+  padding: 15px 10px;
+  display: block;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid #c5c2c2;
+  outline: none;
+  color: #c5c2c2;
+  line-height: 5px;
+  font-size: 15px;
+}
+
+.btn {
+  background: #33526a;
+  color: #c5c2c2;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.btn-big {
+  display: block;
+  padding: 10px;
+  line-height: 10px;
+}
+
+.btn:hover {
+  color: #c5c2c2;
+  background: #8caec7;
 }
 
 .footer .footer-bottom {
@@ -230,11 +294,32 @@ nav {
   padding-top: 20px;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #376487;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8caec7;
+}
+
 @media (max-width: 768px) {
   .card {
     -ms-flex-direction: column;
         flex-direction: column;
     width: 100%;
+  }
+  .footer {
+    height: 1000px;
+  }
+  .footer .footer-content {
+    height: auto;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */
