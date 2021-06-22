@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
-    <title>PKproject</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>PKproject</title>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
         <div class="slide">
             <nav>
                 <div class="logo">
-                    <h3>pkproject</h3>
+                    <h3>PKproject</h3>
                 </div>
                 <ul class="nav-links">
                     <li>Home</li>
@@ -26,132 +26,79 @@
                     <li>Kontakt</li>
                 </ul>
             </nav>
-            <img class="homeImage" src="images/pexels-tranmautritam-326501.jpg">
+            <hr />
         </div>
+        <img class="main_image" src="images/main.jpg">
     </div>
 
-    <div class="intro-container">
-        <div class="intro-contain">
-            <h2>O nas</h2>
-            <div class="intro">
-                <div class="image">
-                    <img src="images/pkteam.jpg" alt="">
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                        deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
-                        provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et
-                        dolorum fuga.
-                        Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
-                        est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis
-                        voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
-                        debitis aut
-                        rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non
-                        recusandae.
-                        Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
-                        consequatur
-                        aut perferendis doloribus asperiores repellat.</p>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="intro sections">
+                    <div class="section-container">
+                        <div class="image">
+                            <img src="images/intro.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="title">O nas</p>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="offer sections">
+                    <div class="section-container">
+                        <div class="image">
+                            <img src="images/offer.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="title">Oferta</p>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="projects sections">
+                    <div class="section-container">
+                        <div class="image">
+                            <img src="images/project.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="title">Projekty </p>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="contact sections">
+                    <div class="section-container">
+                        <div class="image">
+                            <img src="images/contact.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="title">Kontakt</p>
+                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="swiper-pagination"></div>
     </div>
 
-
-    <div class="offer-container">
-        <div class="heading">
-            <h2>Nasza oferta</h2>
-        </div>
-        <div class="row">
-            <div class="card">
-                <div class="card-header">
-                    <h2>Wizualizacja</h2>
-                </div>
-                <div class="card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="#" class="btn">Read more</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h2>Projekt strony</h2>
-                </div>
-                <div class="card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="#" class="btn">Read more</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h2>Responsywność stron</h2>
-                </div>
-                <div class="card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="#" class="btn">Read more</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h2>Wsparcie</h2>
-                </div>
-                <div class="card-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="#" class="btn">Read more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
-        <div class="footer-content">
-            <div class="footer-section about">
-                <h1 class="logo-text"><span>pkproject</h1>
-
-                <div id="Contact" class="contact">
-                    <span><i class="fas fa-phone"></i> &nbsp; 509-823-027</span>
-                    <span><i class="fas fa-envelope"></i> &nbsp; office@pkproject.pl</span>
-                    <span><i class="fas fa-map-marker-alt"></i> &nbsp; Warszawa/Gorzów Wielkopolski</span>
-                </div>
-                <div class="socials">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-
-            <div class="footer-section links">
-                <h2>Quick navigation</h2>
-                <ul>
-                    <li>Home</li>
-                    <li>O nas</li>
-                    <li>Projekt strony</li>
-                    <li>Cennik</li>
-                    <li>Kontakt</li>
-                </ul>
-            </div>
-            <div class="footer-section contact-form">
-                <h2>Zostańmy w kontakcie</h2>
-                <br>
-                <form action="index.html" method="post">
-                    <input type="email" name="email" class="text-input contact-input" placeholder="Your email">
-                    <textarea name="message" class="text-input contact-input" placeholder="Your message"></textarea>
-                    <button type="submit" class="btn btn-big">
-                        <i class="far fa-paper-plane"></i>
-                        Send
-                    </button>
-                </form>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            &copy; pkproject.pl | Designed by pkproject
-        </div>
-    </div>
-
-
-</body>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 
 </html>
