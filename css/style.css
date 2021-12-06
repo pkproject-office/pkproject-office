@@ -309,7 +309,11 @@ header {
 }
 
 .projects {
-  background-color: #e7dcd1;
+  background-image: url(/images/kolaz1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 .contact {
