@@ -16,13 +16,13 @@ toggle.onclick = function () {
     navbar.classList.toggle('active');
 }
 /* Swiper */
-let swiper = new Swiper('.swiper-container', {
-    direction: 'vertical',
-    sliderPerView: 1,
-    spaceBetween: 0,
-    mousewheel: true,
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'progressbar',
-    }
-})
+// let swiper = new Swiper('.swiper-container', {
+//     direction: 'vertical',
+//     sliderPerView: 1,
+//     spaceBetween: 0,
+//     mousewheel: true,
+//     pagination: {
+//         el: '.swiper-pagination',
+//         type: 'progressbar',
+//     }
+// })
