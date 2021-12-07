@@ -213,7 +213,7 @@ header {
 
 .swiper-container {
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
     margin-top: 20px;
 }
 
@@ -248,8 +248,8 @@ header {
 .projects,
 .contact {
     width: 100%;
-    height: 100vh;
-    padding: 0 80px;
+    height: 60vh;
+    padding: 0 100px;
 }
 
 .section-container {
@@ -316,7 +316,7 @@ header {
 }
 
 .image > img {
-    width: 100%;
+    width: 80%;
     border-radius: 40px;
 }
 
@@ -362,13 +362,13 @@ header {
 }
 
 .text > .title {
-    font-size: 62px;
+    font-size: 48px;
     font-weight: 100;
     margin-bottom: 30px;
 }
 
 .text > .description {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 // .swiper-container-horizontal > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
