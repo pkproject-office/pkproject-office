@@ -411,21 +411,26 @@ header {
         width: 150px;
         height: 190px;
         border-style: none;
+        padding: 15px 0;
     }
     .card-body p {
         display: none;
+    }
+    .offer > .section-container > .text {
+        text-align: center;
+        max-width: 300px;
     }
     .text {
         text-align: center;
     }
     .text > .title {
-        font-size: 52px;
+        font-size: 36px;
         font-weight: 100;
         margin-bottom: 5px;
         text-align: center;
     }
     .text > .description {
-        font-size: 19px;
+        font-size: 16px;
         font-weight: 100;
         text-align: center;
         margin: 0 30px;
@@ -437,14 +442,15 @@ header {
 @media only screen and (max-width: 768px) {
     .section-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        margin-bottom: 20px;
     }
     .image {
         width: 200px;
     }
     .card {
-        width: 150px;
-        height: 190px;
+        width: 120px;
+        height: 160px;
         border-style: none;
     }
     .card-body p {
@@ -460,14 +466,19 @@ header {
     .text > .title {
         font-size: 42px;
         font-weight: 100;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         text-align: center;
-        padding-top: 25px;
+        padding-top: 15px;
     }
     .text > .description {
         font-size: 16px;
         text-align: justify;
         margin: 0 20px;
+    }
+    
+    #Offer > .section-container > .row > .card {
+        max-width: 30%;
+        margin: 0 25px 25px;
     }
 }
 @media only screen and (max-width: 512px) {
