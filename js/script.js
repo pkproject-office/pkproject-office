@@ -15,6 +15,8 @@ toggle.onclick = function () {
     toggle.classList.toggle('active');
     navbar.classList.toggle('active');
 }
+
+
 /* Swiper */
 // let swiper = new Swiper('.swiper-container', {
 //     direction: 'vertical',
