@@ -17,14 +17,15 @@ toggle.onclick = function () {
 }
 
 
-/* Swiper */
-// let swiper = new Swiper('.swiper-container', {
-//     direction: 'vertical',
-//     sliderPerView: 1,
-//     spaceBetween: 0,
-//     mousewheel: true,
-//     pagination: {
-//         el: '.swiper-pagination',
-//         type: 'progressbar',
-//     }
-// })
+new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    autoplay: {
+      delay: 2000,
+      pasueOnMouseEnter: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  })
+  

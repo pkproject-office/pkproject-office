@@ -8,15 +8,14 @@
 body {
   font-family: 'Montserrat', sans-serif;
   position: relative;
-  max-width: 1440px;
-  height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
   font-size: 14px;
   color: #000;
-  padding: 0;
 }
 
 html::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
 }
 
 html::-webkit-scrollbar-track {
@@ -26,11 +25,6 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background: #03172a;
   border-radius: 25px;
-}
-
-.slide {
-  width: 100%;
-  height: 100px;
 }
 
 header {
@@ -114,6 +108,7 @@ header {
   transition: 0.5s;
   width: 0;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 #navbar.active {
@@ -143,6 +138,14 @@ header {
 #navbar ul li a:hover {
   color: #dab174;
   text-transform: lowercase;
+}
+
+.svg-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 80px;
 }
 
 #colour-circle {
@@ -214,8 +217,7 @@ header {
 }
 
 .swiper-container {
-  width: 80vw;
-  height: 60vh;
+  margin-top: 30px;
 }
 
 .swiper-slide {
@@ -254,10 +256,16 @@ header {
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
+  gap: 50px;
+}
+
+.section-container h2 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
 }
 
 .row {
@@ -273,8 +281,6 @@ header {
 
 .card {
   width: 12vw;
-  border: 1px solid #6a6767;
-  border-radius: 15px;
   margin: 10px;
   margin-bottom: 50px;
   transition: 0.3s;
@@ -295,23 +301,19 @@ header {
 }
 
 .intro {
-  background-color: #dad7ec;
+  background-color: #BED5DA;
 }
 
 .offer {
-  background-color: #c0e1ec;
+  background-color: #D3D6DF;
 }
 
 .projects {
-  background-image: url(/images/kolaz1.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  background-color: #BED5DA;
 }
 
 .contact {
-  background-color: #f8e0ca;
+  background-color: #D3D6DF;
 }
 
 .image {
@@ -338,7 +340,6 @@ header {
 }
 
 .project-text {
-  background-color: #071c2f;
   color: white;
   border-radius: 8px;
   font-size: 16px;
@@ -413,26 +414,21 @@ header {
     width: 150px;
     height: 190px;
     border-style: none;
-    padding: 15px 0;
   }
   .card-body p {
     display: none;
-  }
-  .offer > .section-container > .text {
-    text-align: center;
-    max-width: 300px;
   }
   .text {
     text-align: center;
   }
   .text > .title {
-    font-size: 36px;
+    font-size: 52px;
     font-weight: 100;
     margin-bottom: 5px;
     text-align: center;
   }
   .text > .description {
-    font-size: 16px;
+    font-size: 19px;
     font-weight: 100;
     text-align: center;
     margin: 0 30px;
@@ -446,16 +442,15 @@ header {
   .section-container {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    margin-bottom: 20px;
+    -ms-flex-direction: row;
+        flex-direction: row;
   }
   .image {
     width: 200px;
   }
   .card {
-    width: 120px;
-    height: 160px;
+    width: 150px;
+    height: 190px;
     border-style: none;
   }
   .card-body p {
@@ -471,18 +466,14 @@ header {
   .text > .title {
     font-size: 42px;
     font-weight: 100;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 25px;
   }
   .text > .description {
     font-size: 16px;
     text-align: justify;
     margin: 0 20px;
-  }
-  #Offer > .section-container > .row > .card {
-    max-width: 30%;
-    margin: 0 25px 25px;
   }
 }
 
@@ -518,14 +509,6 @@ header {
   }
   .project-image {
     width: 280px;
-    width: 280px;
-    width: 280px;
-    width: 280px;
-    width: 280px;
-    margin-left: 20px;
-    margin-left: 20px;
-    margin-left: 20px;
-    margin-left: 20px;
     margin-left: 20px;
   }
   .project-text {
