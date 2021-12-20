@@ -11,21 +11,9 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   font-size: 14px;
-  color: #000;
+  color: #fff;
+  background-color: rgb(248, 240, 240);
 }
-
-// html::-webkit-scrollbar {
-//   width: 10px;
-// }
-
-// html::-webkit-scrollbar-track {
-//   background-color: rgb(176, 207, 238);
-// }
-
-// html::-webkit-scrollbar-thumb {
-//   background: #03172a;
-//   border-radius: 25px;
-// }
 
 header {
   position: fixed;
@@ -34,7 +22,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 5px 25px #738ea9;
   z-index: 1000;
 }
@@ -136,7 +124,7 @@ header {
 .svg-container {
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  margin: 80px 0;
 }
 
 #colour-circle {
@@ -234,6 +222,8 @@ header {
 .sections {
   display: flex;
   align-items: center;
+  border-radius: 5px;
+  margin: 2px;
 }
 
 .intro,
@@ -278,7 +268,7 @@ header {
 .card-header {
   text-align: center;
   padding: 30px 10px;
-  color: #000;
+  color: #fff;
 }
 
 .card-body {
@@ -289,19 +279,19 @@ header {
 }
 
 .intro {
-  background-color: #bed5da;
+  background-color: #130f40c4;
 }
 
 .offer {
-  background-color: #d3d6df;
+  background-color: #130f40c4;
 }
 
 .projects {
-  background-color: #bed5da;
+  background-color: #130f40c4;
 }
 
 .contact {
-  background-color: #d3d6df;
+  background-color: #130f40c4;
 }
 
 .image {
@@ -363,6 +353,18 @@ header {
 .text > .description {
   font-size: 18px;
 }
+
+.fab, .far {
+  color: #7ed6df;
+}
+
+.fab:hover{
+  color:rgb(218, 177, 116);
+}
+.far:hover {
+  color:rgb(218, 177, 116);
+}
+
 
 // Media queries
 @media only screen and (max-width: 1024px) {
@@ -452,6 +454,10 @@ header {
     text-align: center;
   }
 }
+@media only screen and (max-width: 540px) {
+  
+}
+
 @media only screen and (max-width: 411px) {
   .logo {
     margin-right: 30px;
@@ -486,12 +492,9 @@ header {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) and (orientation: portrait) {
   .logo {
     margin-right: 35px;
-  }
-  .svg-container {
-    margin: 80px auto 0;
   }
   .sections {
     justify-content: space-evenly;
@@ -521,5 +524,100 @@ header {
   }
   .text > .description {
     font-size: 18px;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .image {
+    width: 180px;
+    // margin: -5px;
+  }
+  .project-image {
+    max-width: 130px;
+    margin: -5px;
+  }
+  .card {
+    width: 150px;
+    height: 120px;
+    padding: 12px;
+    margin-top: -10px;
+  }
+  .card-body img {
+    max-width: 70px;
+  }
+  .text > .description {
+    font-size: 16px;
+    padding: 25px;
+  }
+}
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .text {
+    text-align: center;
+  }
+  .text > .description {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 812px) and (orientation: landscape) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .sections {
+    height: 480px;
+    padding: 30px;
+  }
+  .card-body img {
+    max-width: 100px;
+  }
+  .card-header {
+    font-size: 13px;
+  }
+  .image {
+    width: 300px;
+    padding: 20px;
+  }
+  .project-image {
+    max-width: 150px;
+    margin: -10px;
+  }
+  .text {
+    text-align: center;
+  }
+  .text > .title {
+    font-size: 28px;
+  }
+  .text > .description {
+    text-align: center;
+    font-size: 19px;
+  }
+}
+@media only screen and (max-width: 731px) and (orientation: landscape) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .sections {
+    height: 480px;
+    padding: 30px;
+  }
+  .card-body img {
+    max-width: 100px;
+  }
+  .card-header {
+    font-size: 13px;
+  }
+  .image {
+    display: none;
+  }
+  .project-image {
+    max-width: 100px;
+    margin: -25px;
+  }
+  .text > .title {
+    font-size: 28px;
+  }
+  .text > .description {
+    font-size: 19px;
   }
 }
