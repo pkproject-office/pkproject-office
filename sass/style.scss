@@ -279,7 +279,7 @@ header {
 }
 
 .intro {
-  background-color: #130f40c4;
+  background-color: #110c4f93;
 }
 
 .offer {
@@ -287,7 +287,7 @@ header {
 }
 
 .projects {
-  background-color: #130f40c4;
+  background-color: #110c4f93;
 }
 
 .contact {
@@ -354,17 +354,59 @@ header {
   font-size: 18px;
 }
 
-.fab, .far {
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  margin: 0 auto;
+}
+
+.feedback-input {
+  color:white;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #7ed6df;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 120px;
+  line-height: 120%;
+}
+
+.submit {
+  width: 50%;
+  background:#7ed6df;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  font-weight:400;
+}
+
+.submit:hover{
+  background-color:rgb(218, 177, 116);
+}
+
+.fab {
   color: #7ed6df;
 }
 
-.fab:hover{
-  color:rgb(218, 177, 116);
+.fab:hover {
+  color: rgb(218, 177, 116);
 }
-.far:hover {
-  color:rgb(218, 177, 116);
-}
-
 
 // Media queries
 @media only screen and (max-width: 1024px) {
@@ -453,9 +495,6 @@ header {
     font-size: 16px;
     text-align: center;
   }
-}
-@media only screen and (max-width: 540px) {
-  
 }
 
 @media only screen and (max-width: 411px) {
