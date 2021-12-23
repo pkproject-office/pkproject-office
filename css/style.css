@@ -521,7 +521,7 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 414px) {
   .logo {
     margin-right: 30px;
   }
