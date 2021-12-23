@@ -361,7 +361,6 @@ header {
 
 .text > .title {
   font-size: 48px;
-  font-weight: 100;
   margin-bottom: 30px;
 }
 
@@ -374,7 +373,6 @@ header {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  width: 20vw;
   margin: 0 auto;
 }
 
@@ -383,15 +381,12 @@ header {
   font-weight: 500;
   font-size: 18px;
   border-radius: 5px;
-  line-height: 22px;
+  line-height: 25px;
   background-color: transparent;
   border: 2px solid #7ed6df;
   transition: all 0.3s;
-  padding: 13px;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  width: 100%;
-  box-sizing: border-box;
+  padding: 15px;
+  margin-bottom: 10px;
 }
 
 textarea {
@@ -521,9 +516,12 @@ textarea {
     font-size: 16px;
     text-align: center;
   }
+  .contact-form {
+    margin-top: 10px;
+  }
 }
 
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 412px) {
   .logo {
     margin-right: 30px;
   }
@@ -555,6 +553,18 @@ textarea {
     font-size: 18px;
     text-align: center;
     margin: 0 60px 0;
+  }
+  .fab {
+    border: 2px solid #7ed6df;
+    border-radius: 3px;
+    padding: 3px;
+  }
+  .contact-form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin: 10px auto;
   }
 }
 
@@ -592,11 +602,26 @@ textarea {
   .text > .description {
     font-size: 18px;
   }
+  .contact-form {
+    width: 50vw;
+  }
+  .feedback-input {
+    height: 50px;
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+  .submit {
+    width: 40%;
+    height: 25px;
+    line-height: 26%;
+    font-size: 15px;
+  }
 }
 
 @media only screen and (max-width: 280px) {
   .image {
     width: 180px;
+    margin-top: 5px;
   }
   .project-image {
     max-width: 130px;
@@ -610,6 +635,10 @@ textarea {
   }
   .card-body img {
     max-width: 70px;
+  }
+  .text {
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .text > .description {
     font-size: 16px;
@@ -659,39 +688,51 @@ textarea {
   }
   .text > .description {
     text-align: center;
-    font-size: 19px;
+    font-size: 14px;
+  }
+  .fab {
+    border: 2px solid #7ed6df;
+    border-radius: 3px;
+    padding: 3px;
+  }
+  .contact-form {
+    width: 30vw;
+  }
+  .feedback-input {
+    height: 50px;
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+  .submit {
+    width: 40%;
+    height: 25px;
+    line-height: 26%;
+    font-size: 15px;
   }
 }
 
-@media only screen and (max-width: 731px) and (orientation: landscape) {
-  body {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-  }
-  .sections {
-    height: 480px;
-    padding: 30px;
-  }
-  .card-body img {
-    max-width: 100px;
-  }
-  .card-header {
-    font-size: 13px;
-  }
+@media only screen and (max-width: 732px) and (orientation: landscape) {
   .image {
     display: none;
   }
-  .project-image {
-    max-width: 100px;
-    margin: -25px;
+  .text {
+    margin-top: 5px;
   }
-  .text > .title {
-    font-size: 28px;
+  .contact-form {
+    width: 30vw;
   }
-  .text > .description {
-    font-size: 19px;
+  .feedback-input {
+    font-size: 15px;
+    height: 32px;
+    line-height: 32%;
+    padding: 10px;
+    margin-bottom: 7px;
+  }
+  .submit {
+    width: 30%;
+    height: 22px;
+    line-height: 25%;
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
