@@ -287,6 +287,10 @@ header {
   margin-left: 15px;
 }
 
+.card-body p {
+  font-weight: 400;
+}
+
 .intro {
   background-color: #110c4f93;
 }
@@ -382,7 +386,7 @@ header {
   border: 2px solid #7ed6df;
   transition: all 0.3s;
   padding: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 textarea {
@@ -517,23 +521,36 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 415px) {
+  header {
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    height: 45px;
+  }
   .logo {
-    margin-right: 30px;
+    height: 40x;
+    line-height: 45px;
+    font-size: 28px;
+  }
+  #toggle {
+    width: 45px;
+    height: 45px;
   }
   .sections {
-    -ms-flex-pack: space-evenly;
-        justify-content: space-evenly;
+    height: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .image {
-    width: 300px;
+    width: 180px;
+    margin-bottom: 20px;
   }
   .card {
     width: 150px;
     height: 150px;
   }
   .card-body img {
-    max-width: 100px;
+    max-width: 70px;
   }
   .project-image {
     width: 250px;
@@ -541,8 +558,6 @@ textarea {
   }
   .text > .title {
     font-size: 32px;
-    margin-bottom: 15px;
-    padding-top: 25px;
     text-align: center;
   }
   .text > .description {
@@ -565,9 +580,6 @@ textarea {
 }
 
 @media only screen and (max-width: 375px) and (orientation: portrait) {
-  .logo {
-    margin-right: 35px;
-  }
   .sections {
     -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
@@ -577,7 +589,7 @@ textarea {
     height: 150px;
   }
   .card-body img {
-    max-width: 100px;
+    max-width: 70px;
   }
   .card-header {
     font-size: 13px;
@@ -707,9 +719,10 @@ textarea {
   }
 }
 
-@media only screen and (max-width: 732px) and (orientation: landscape) {
+@media only screen and (max-width: 736px) and (orientation: landscape) {
   .image {
-    display: none;
+    width: 250px;
+    margin-top: 5px;
   }
   .text {
     margin-top: 5px;
