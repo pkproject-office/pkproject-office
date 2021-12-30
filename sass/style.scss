@@ -581,9 +581,6 @@ header {
   .project-image {
     max-width: 200px;
   }
-  .text {
-    width: 20%;
-  }
   .text > .title {
     font-size: 31px;
     text-align: center;
@@ -600,7 +597,6 @@ header {
     margin-bottom: 10px;
   }
   .submit {
-    width: 40%;
     height: 25px;
     line-height: 26%;
     font-size: 15px;
@@ -625,7 +621,8 @@ header {
     max-width: 70px;
   }
   .text {
-    height: fit-content;
+    text-align: center;
+    width: 90vw;
   }
   .text > .description {
     font-size: 16px;
