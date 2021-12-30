@@ -244,36 +244,60 @@ header {
 }
 .row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  width: 25vw;
 }
 .card {
-  width: 12vw;
-  margin: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   transition: 0.3s;
+  border: 2px solid white;
+  border-radius: 8px;
+  background-color: rgb(21, 29, 37);
 }
-
 .card:hover {
   opacity: 0.5;
 }
-
 .card-header {
   text-align: center;
-  padding: 30px 10px;
-  color: #fff;
+  padding: 15px 10px;
+  color: #dfe6e9;
 }
-
 .card-body {
   margin-left: 15px;
 }
 .card-body img {
-  width: 100px;
+  width: 90px;
 }
 .card-body p {
   font-weight: 400;
+  padding: 10px;
+  color: #dfe6e9;
 }
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 
 .intro {
   background-color: #110c4f93;
@@ -333,6 +357,20 @@ header {
   font-weight: 600;
 }
 
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .text {
   font-family: 'Poppins', sans-serif;
   justify-content: space-evenly;
@@ -392,6 +430,7 @@ header {
   padding-bottom: 10px;
   transition: all 0.3s;
   font-weight: 400;
+  box-shadow: 5px 5px #738ea9;
 }
 
 .submit:hover {
@@ -467,13 +506,20 @@ header {
     width: 350px;
     margin-top: 60px;
   }
+  .row {
+    width: fit-content;
+  }
   .card {
-    width: 150px;
+    width: 40vw;
     height: 190px;
     margin-top: 20px;
   }
   .card-body p {
     display: none;
+  }
+
+  .card-body img {
+    width:100px;
   }
   .project-image {
     width: 300px;
@@ -514,14 +560,18 @@ header {
   }
   .image {
     width: 180px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+  }
+  .row {
+    width: fit-content;
   }
   .card {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 140px;
   }
   .card-body img {
-    max-width: 70px;
+    max-width: 80px;
+    margin-right: 5px;
   }
   .project-image {
     width: 250px;
@@ -567,10 +617,10 @@ header {
   }
   .card {
     width: 150px;
-    height: 150px;
+    height: 140px;
   }
   .card-body img {
-    max-width: 70px;
+    max-width: 60px;
   }
   .card-header {
     font-size: 13px;
@@ -636,6 +686,10 @@ header {
   .text > .description {
     text-align: center;
   }
+  .card {
+    width: 200px;
+    height: 150px;
+  }
 }
 
 @media only screen and (max-width: 812px) and (orientation: landscape) {
@@ -698,5 +752,17 @@ header {
   .text {
     margin-top: 5px;
     width: 40vw;
+  }
+  .row {
+    width: fit-content;
+  }
+  .card {
+    width: 190px;
+    height: 120px;
+    margin-top: 5px;
+  }
+  .card-body img {
+    max-width: 60px;
+    margin-right: 5px;
   }
 }

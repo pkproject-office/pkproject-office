@@ -19,10 +19,8 @@ header {
   position: fixed;
   top: 0;
   right: 0;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: space-evenly;
-      justify-content: space-evenly;
+  justify-content: space-evenly;
   width: 100%;
   background-color: white;
   box-shadow: 0 5px 25px #738ea9;
@@ -48,12 +46,9 @@ header {
   height: 60px;
   background-color: #778ad0;
   cursor: pointer;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #toggle:before {
@@ -105,10 +100,8 @@ header {
 
 #navbar ul {
   position: relative;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
+  flex-direction: row;
   list-style: none;
 }
 
@@ -129,10 +122,8 @@ header {
 }
 
 .svg-container {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   margin: 80px 0;
 }
 
@@ -213,19 +204,23 @@ header {
   font-size: 18px;
   background: #fff;
   /* Center slide text vertically */
+  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-box-pack: center;
   -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-box-align: center;
   -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
 }
 
 .sections {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   border-radius: 5px;
   margin: 2px;
 }
@@ -242,30 +237,24 @@ header {
 .section-container {
   width: 1170px;
   margin: 0 30px;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .row {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 25vw;
 }
 
 .card {
-  width: 12vw;
-  margin: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   transition: 0.3s;
+  border: 2px solid white;
+  border-radius: 8px;
+  background-color: #151d25;
 }
 
 .card:hover {
@@ -274,8 +263,8 @@ header {
 
 .card-header {
   text-align: center;
-  padding: 30px 10px;
-  color: #fff;
+  padding: 15px 10px;
+  color: #dfe6e9;
 }
 
 .card-body {
@@ -283,11 +272,37 @@ header {
 }
 
 .card-body img {
-  width: 100px;
+  width: 90px;
 }
 
 .card-body p {
   font-weight: 400;
+  padding: 10px;
+  color: #dfe6e9;
+}
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .intro {
@@ -318,10 +333,8 @@ header {
 
 .projectOne,
 .projectTwo {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
   padding: 10px;
 }
 
@@ -350,10 +363,24 @@ header {
   font-weight: 600;
 }
 
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .text {
   font-family: 'Poppins', sans-serif;
-  -ms-flex-pack: space-evenly;
-      justify-content: space-evenly;
+  justify-content: space-evenly;
   text-align: justify;
   width: 30vw;
 }
@@ -367,7 +394,6 @@ header {
 }
 
 .contact-form {
-  display: -ms-flexbox;
   display: flex;
   border: 2px solid #7ed6df;
   border-radius: 20px;
@@ -375,10 +401,8 @@ header {
 }
 
 .input-fields {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
   margin-right: 10px;
 }
 
@@ -413,6 +437,7 @@ header {
   padding-bottom: 10px;
   transition: all 0.3s;
   font-weight: 400;
+  box-shadow: 5px 5px #738ea9;
 }
 
 .submit:hover {
@@ -434,12 +459,9 @@ header {
     right: 0;
     width: 100%;
     transition: 0.5s;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #navbar.active {
     height: calc(100vh - 60px);
@@ -447,16 +469,12 @@ header {
     width: 100%;
   }
   #navbar ul {
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-align: center;
-        align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .sections {
-    -ms-flex-align: center;
-        align-items: center;
+    align-items: center;
   }
   .card {
     width: 150px;
@@ -488,22 +506,26 @@ header {
     margin-right: 25px;
   }
   .section-container {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
   }
   .image {
     width: 350px;
     margin-top: 60px;
   }
+  .row {
+    width: fit-content;
+  }
   .card {
-    width: 150px;
+    width: 40vw;
     height: 190px;
     margin-top: 20px;
   }
   .card-body p {
     display: none;
+  }
+  .card-body img {
+    width: 100px;
   }
   .project-image {
     width: 300px;
@@ -530,8 +552,7 @@ header {
 
 @media only screen and (max-width: 415px) {
   header {
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    justify-content: space-between;
     height: 60px;
   }
   .logo {
@@ -541,19 +562,22 @@ header {
   }
   .sections {
     height: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   .image {
     width: 180px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+  }
+  .row {
+    width: fit-content;
   }
   .card {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 140px;
   }
   .card-body img {
-    max-width: 70px;
+    max-width: 80px;
+    margin-right: 5px;
   }
   .project-image {
     width: 250px;
@@ -578,10 +602,8 @@ header {
     padding: 3px;
   }
   .contact-form {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
     margin: 10px auto;
   }
   .input-fields,
@@ -597,15 +619,14 @@ header {
 
 @media only screen and (max-width: 375px) and (orientation: portrait) {
   .sections {
-    -ms-flex-pack: space-evenly;
-        justify-content: space-evenly;
+    justify-content: space-evenly;
   }
   .card {
     width: 150px;
-    height: 150px;
+    height: 140px;
   }
   .card-body img {
-    max-width: 70px;
+    max-width: 60px;
   }
   .card-header {
     font-size: 13px;
@@ -673,6 +694,10 @@ header {
   .text > .description {
     text-align: center;
   }
+  .card {
+    width: 200px;
+    height: 150px;
+  }
 }
 
 @media only screen and (max-width: 812px) and (orientation: landscape) {
@@ -726,10 +751,8 @@ header {
 
 @media only screen and (max-width: 736px) and (orientation: landscape) {
   .section-container {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
+    flex-direction: row;
   }
   .image {
     width: 280px;
@@ -739,5 +762,18 @@ header {
     margin-top: 5px;
     width: 40vw;
   }
+  .row {
+    width: fit-content;
+  }
+  .card {
+    width: 190px;
+    height: 120px;
+    margin-top: 5px;
+  }
+  .card-body img {
+    max-width: 60px;
+    margin-right: 5px;
+  }
 }
+
 /*# sourceMappingURL=style.css.map */

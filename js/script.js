@@ -16,6 +16,24 @@ toggle.onclick = function () {
     navbar.classList.toggle('active');
 }
 
+// animation on scroll
+function reveal() {
+  let reveals = document.querySelectorAll(".reveal");
+
+  for (let i = 0; i < reveals.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = reveals[i].getBoundingClientRect().top;
+    let elementVisible = 150; /*is the height at which the element should be revealed to the user*/
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+window.addEventListener("scroll", reveal);
+
 
 new Swiper('.swiper-container', {
     slidesPerView: 1,
