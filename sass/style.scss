@@ -240,20 +240,14 @@ header {
   margin: 0 30px;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
-
-.section-container h2 {
-  display: flex;
-  flex-direction: row;
-}
-
 .row {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
-
 .card {
   width: 12vw;
   margin: 10px;
@@ -273,6 +267,9 @@ header {
 
 .card-body {
   margin-left: 15px;
+}
+.card-body img {
+  width: 100px;
 }
 .card-body p {
   font-weight: 400;
@@ -295,7 +292,7 @@ header {
 }
 
 .image {
-  width: 600px;
+  width: 400px;
   margin-top: 25px;
 }
 
@@ -312,16 +309,15 @@ header {
 }
 
 .project-image {
-  width: 450px;
+  width: 400px;
+  border-radius: 8px;
 }
 
 .project-text {
   color: white;
   border-radius: 8px;
   font-size: 16px;
-  padding: 16px 32px;
-  margin-top: 5px;
-  text-align: auto;
+  text-align: justify;
 }
 
 .project-text:hover {
@@ -338,15 +334,14 @@ header {
 }
 
 .text {
-  width: 450px;
   font-family: 'Poppins', sans-serif;
-  text-justify: auto;
-  text-align: left;
+  justify-content: space-evenly;
+  text-align: justify;
+  width: 30vw;
 }
 
 .text > .title {
   font-size: 48px;
-  margin-bottom: 30px;
 }
 
 .text > .description {
@@ -355,26 +350,34 @@ header {
 
 .contact-form {
   display: flex;
+  border: 2px solid #7ed6df;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.input-fields {
+  display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin-right: 10px;
+}
+
+.input-fields,
+.feedback-input {
+  width: 300px;
+}
+
+.input-fields .input,
+.feedback-input {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
 }
 
 .feedback-input {
-  color: white;
-  font-weight: 500;
-  font-size: 18px;
-  border-radius: 5px;
-  line-height: 25px;
-  background-color: transparent;
-  border: 2px solid #7ed6df;
-  transition: all 0.3s;
-  padding: 15px;
-  margin-bottom: 15px;
-}
-
-textarea {
-  height: 120px;
-  line-height: 120%;
+  height: 150px;
 }
 
 .submit {
@@ -498,17 +501,12 @@ textarea {
 @media only screen and (max-width: 415px) {
   header {
     justify-content: space-between;
-    height: 45px;
+    height: 60px;
   }
-  
   .logo {
     height: 40x;
-    line-height: 45px;
+    line-height: 60px;
     font-size: 28px;
-  }
-  #toggle {
-    width: 45px;
-    height: 45px;
   }
   .sections {
     height: 100%;
@@ -529,6 +527,10 @@ textarea {
     width: 250px;
     margin-top: 10px;
   }
+  .text {
+    text-align: center;
+    width: 90vw;
+  }
   .text > .title {
     font-size: 32px;
     text-align: center;
@@ -548,6 +550,15 @@ textarea {
     flex-direction: column;
     margin: 10px auto;
   }
+  .input-fields,
+  .feedback-input {
+    width: 200px;
+  }
+  .submit {
+    width: 30%;
+    font-size: 17px;
+    padding: 5px;
+  }
 }
 
 @media only screen and (max-width: 375px) and (orientation: portrait) {
@@ -565,23 +576,23 @@ textarea {
     font-size: 13px;
   }
   .image {
-    width: 250px;
+    width: 150px;
   }
   .project-image {
     max-width: 200px;
   }
   .text {
-    text-align: center;
+    width: 20%;
   }
   .text > .title {
     font-size: 31px;
     text-align: center;
   }
   .text > .description {
-    font-size: 18px;
+    font-size: 15px;
   }
   .contact-form {
-    width: 50vw;
+    border: none;
   }
   .feedback-input {
     height: 50px;
@@ -631,10 +642,6 @@ textarea {
 }
 
 @media only screen and (max-width: 812px) and (orientation: landscape) {
-  body {
-    display: flex;
-    flex-direction: column;
-  }
   .sections {
     height: 480px;
     padding: 30px;
@@ -650,8 +657,8 @@ textarea {
     padding: 20px;
   }
   .project-image {
-    max-width: 150px;
-    margin: -10px;
+    max-width: 220px;
+    margin-top: 50px;
   }
   .text {
     text-align: center;
@@ -669,42 +676,30 @@ textarea {
     padding: 3px;
   }
   .contact-form {
-    width: 30vw;
+    height: 280px;
+    border: none;
   }
+  .input-fields,
   .feedback-input {
-    height: 50px;
-    padding: 12px;
-    margin-bottom: 10px;
-  }
-  .submit {
-    width: 40%;
-    height: 25px;
-    line-height: 26%;
-    font-size: 15px;
-  }
-}
-@media only screen and (max-width: 736px) and (orientation: landscape) {
-  .image {
-    width: 250px;
-    margin-top: 5px;
-  }
-  .text {
-    margin-top: 5px;
-  }
-  .contact-form {
-    width: 30vw;
-  }
-  .feedback-input {
-    font-size: 15px;
-    height: 32px;
-    line-height: 32%;
-    padding: 10px;
-    margin-bottom: 7px;
+    width: 200px;
   }
   .submit {
     width: 30%;
-    height: 22px;
-    line-height: 25%;
-    font-size: 15px;
+    font-size: 17px;
+    padding: 5px;
+  }
+}
+@media only screen and (max-width: 736px) and (orientation: landscape) {
+  .section-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .image {
+    width: 280px;
+    margin-top: 40px;
+  }
+  .text {
+    margin-top: 5px;
+    width: 40vw;
   }
 }
