@@ -692,19 +692,24 @@ header {
   }
 }
 
-@media only screen and (max-width: 812px) and (orientation: landscape) {
+@media only screen and (max-width: 844px) and (orientation: landscape) {
   .sections {
     height: 480px;
     padding: 30px;
   }
+  .card {
+    width: 180px;
+    height: 130px;
+  }
   .card-body img {
-    max-width: 100px;
+    max-width: 70px;
+    margin-right: 5px;
   }
   .card-header {
     font-size: 13px;
   }
   .image {
-    width: 300px;
+    width: 340px;
     padding: 20px;
   }
   .project-image {
@@ -740,7 +745,7 @@ header {
     padding: 5px;
   }
 }
-@media only screen and (max-width: 736px) and (orientation: landscape) {
+@media only screen and (max-width: 768px) and (orientation: landscape) {
   .section-container {
     display: flex;
     flex-direction: row;

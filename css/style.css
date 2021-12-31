@@ -19,8 +19,10 @@ header {
   position: fixed;
   top: 0;
   right: 0;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
   width: 100%;
   background-color: white;
   box-shadow: 0 5px 25px #738ea9;
@@ -46,9 +48,12 @@ header {
   height: 60px;
   background-color: #778ad0;
   cursor: pointer;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 #toggle:before {
@@ -100,8 +105,10 @@ header {
 
 #navbar ul {
   position: relative;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -ms-flex-direction: row;
+      flex-direction: row;
   list-style: none;
 }
 
@@ -122,8 +129,10 @@ header {
 }
 
 .svg-container {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   margin: 80px 0;
 }
 
@@ -204,23 +213,19 @@ header {
   font-size: 18px;
   background: #fff;
   /* Center slide text vertically */
-  display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
   -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
-  -webkit-box-align: center;
   -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
 }
 
 .sections {
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   border-radius: 5px;
   margin: 2px;
 }
@@ -237,15 +242,21 @@ header {
 .section-container {
   width: 1170px;
   margin: 0 30px;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .row {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 25vw;
 }
 
@@ -333,8 +344,10 @@ header {
 
 .projectOne,
 .projectTwo {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   padding: 10px;
 }
 
@@ -380,7 +393,8 @@ header {
 
 .text {
   font-family: 'Poppins', sans-serif;
-  justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
   text-align: justify;
   width: 30vw;
 }
@@ -394,6 +408,7 @@ header {
 }
 
 .contact-form {
+  display: -ms-flexbox;
   display: flex;
   border: 2px solid #7ed6df;
   border-radius: 20px;
@@ -401,8 +416,10 @@ header {
 }
 
 .input-fields {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   margin-right: 10px;
 }
 
@@ -459,9 +476,12 @@ header {
     right: 0;
     width: 100%;
     transition: 0.5s;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
   }
   #navbar.active {
     height: calc(100vh - 60px);
@@ -469,12 +489,16 @@ header {
     width: 100%;
   }
   #navbar ul {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
   }
   .sections {
-    align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
   }
   .card {
     width: 150px;
@@ -506,14 +530,17 @@ header {
     margin-right: 25px;
   }
   .section-container {
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .image {
     width: 350px;
     margin-top: 60px;
   }
   .row {
+    width: -moz-fit-content;
     width: fit-content;
   }
   .card {
@@ -552,7 +579,8 @@ header {
 
 @media only screen and (max-width: 415px) {
   header {
-    justify-content: space-between;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     height: 60px;
   }
   .logo {
@@ -562,13 +590,15 @@ header {
   }
   .sections {
     height: 100%;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .image {
     width: 180px;
     margin-bottom: 15px;
   }
   .row {
+    width: -moz-fit-content;
     width: fit-content;
   }
   .card {
@@ -602,8 +632,10 @@ header {
     padding: 3px;
   }
   .contact-form {
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
     margin: 10px auto;
   }
   .input-fields,
@@ -619,7 +651,8 @@ header {
 
 @media only screen and (max-width: 375px) and (orientation: portrait) {
   .sections {
-    justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
   }
   .card {
     width: 150px;
@@ -700,19 +733,24 @@ header {
   }
 }
 
-@media only screen and (max-width: 812px) and (orientation: landscape) {
+@media only screen and (max-width: 844px) and (orientation: landscape) {
   .sections {
     height: 480px;
     padding: 30px;
   }
+  .card {
+    width: 180px;
+    height: 130px;
+  }
   .card-body img {
-    max-width: 100px;
+    max-width: 70px;
+    margin-right: 5px;
   }
   .card-header {
     font-size: 13px;
   }
   .image {
-    width: 300px;
+    width: 340px;
     padding: 20px;
   }
   .project-image {
@@ -749,10 +787,12 @@ header {
   }
 }
 
-@media only screen and (max-width: 736px) and (orientation: landscape) {
+@media only screen and (max-width: 768px) and (orientation: landscape) {
   .section-container {
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -ms-flex-direction: row;
+        flex-direction: row;
   }
   .image {
     width: 280px;
@@ -763,6 +803,7 @@ header {
     width: 40vw;
   }
   .row {
+    width: -moz-fit-content;
     width: fit-content;
   }
   .card {
@@ -775,5 +816,4 @@ header {
     margin-right: 5px;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
